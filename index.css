@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+  min-width: 412px;
+  min-height: 914px;
+  position: fixed;
+}
+section{
+  display: flex;
+}
+
+#div1{
+  position: relative;
+  background-color: lightblue;
+  min-width: 412px;
+  min-height: 914px;
+}
+#div2{
+  position: relative;
+  background-color: lightpink;
+  min-width: 412px;
+  min-height: 914px;
+}
+#div3{
+  position: relative;
+  background-color: lightgoldenrodyellow;
+  min-width: 412px;
+  min-height: 914px;
+}
+.bottom{
+  min-width: 412px;
+  height: 30px;
+  position: fixed;
+  top:855px;
+  background-color: hsla(0, 0%, 100%, 0.219);
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
