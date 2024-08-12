@@ -564,6 +564,7 @@ billpagescreenshot.addEventListener('click', () => {
       for(let k = 1; k < i; k++){
         let sum =(Number(document.getElementById(y).textContent)) *
                  (Number(document.getElementById(z).value));
+                 sum = Math.trunc(sum);
             document.getElementById(w).textContent = sum;     
             total += sum;
             j++;
@@ -571,7 +572,7 @@ billpagescreenshot.addEventListener('click', () => {
             z = "bi" + j;
             w = "bp" + j;
       }
-
+      total = Math.trunc(total);
       document.getElementById("billtotal").textContent = `Total-Amount : ₹${total}`;
     };
 
