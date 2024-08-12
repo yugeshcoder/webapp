@@ -1,0 +1,80 @@
+#inputpage{
+  background-color: lightgoldenrodyellow;
+}
+#mod{
+  width: 130px;
+}
+
+#nam{
+  width: 130px;
+  margin-left: 4px;
+}
+#tableheader{
+  display: flex;
+  justify-content: center;
+}
+#tableheader th{
+  padding: 0px 22px;
+}
+#inputtablediv{ 
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 400px;
+  overflow: scroll;
+}
+#inputtable{
+  width: 280px;
+  border-collapse: collapse;
+
+}
+#inputtable td{
+  border: 1px solid black;
+  width: 80px;
+  font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#i1,#i2,#i3,#i4,#i5,#i6,#i7,#i8,#i9,#i10,#i11,#i12,#i13,#i14,#i15,#i16,#i17,#i18,#i19
+,#i20,#i21,#i22,#i23,#i24,#i25,#i26,#i27,#i28,#i29{
+  padding: 0px;
+}
+.check{
+  padding: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+input[type="number"]{
+  width: 100px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  background-color: lightgoldenrodyellow;
+}
+
+#showtotaldiv{
+  text-align: center;
+}
+
+#showtotal{
+  margin: 5px;
+}
+
+#navbtndiv{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2px;
+}
+
+#navbtndiv button{
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: hsla(0, 0%, 50%, 0.534)
+}
+
+#navbtndiv #inputpagedone{
+  padding: 5px;
+  background-color: lawngreen;
+  color: black;
+  height: 40px;
+}
