@@ -88,3 +88,18 @@ input[type="number"]{
   border-radius: 100px;
   border: 1px solid ;
 }
+
+#showtotaldiv{
+  display: flex;
+  justify-content: space-around;
+}
+
+#showtotaldiv button{
+  padding: 0 5px;
+  border-radius: 20px;
+  background-color: rgb(252, 164, 0);
+}
+
+#inputdqmn{
+  background-color: hwb(24 14% 45% / 1);
+}

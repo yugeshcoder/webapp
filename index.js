@@ -324,7 +324,7 @@ function calc(){
   if(i29 !== 0){
     document.getElementById("c29").textContent = i29;
   }
-  showtotal = t1+t2+t3+t4+t5+t6+t7+t8+t9+t10+t11+t12+t13+t14+t15+t16+t17+t18+t19+t20+t21+t22+t23+t24+t25+t26+t27+t28+t29;
+  showtotal = (t1+t2+t3+t4+t5+t6+t7+t8+t9+t10+t11+t12+t13+t14+t15+t16+t17+t18+t19+t20+t21+t22+t23+t24+t25+t26+t27+t28+t29);
   document.getElementById("showtotal").textContent = `Total:${showtotal}`;
   document.getElementById("oshowtotal").textContent = `Total:${showtotal}`;
 
@@ -355,18 +355,18 @@ function calc(){
   // document.getElementById("3tp").textContent = tp3;
   // document.getElementById("2tp").textContent = tp2;
 
-  // document.getElementById("7p").textContent = (p26+p27+p28+p29+p1+p2+p3+p4+p5)/10;
-  // document.getElementById("6p").textContent = (p6+p7+p8+p9)/10;
-  // document.getElementById("5p").textContent = (p10+p11+p12+p13)/10;
-  // document.getElementById("4p").textContent = (p14+p15+p16+p17)/10;
-  // document.getElementById("3p").textContent = (p18+p19+p20+p21)/10;
+  document.getElementById("7p").textContent = (p26+p27+p28+p29+p1+p2+p3+p4+p5)/10;
+  document.getElementById("6p").textContent = (p6+p7+p8+p9)/10;
+  document.getElementById("5p").textContent = (p10+p11+p12+p13)/10;
+  document.getElementById("4p").textContent = (p14+p15+p16+p17)/10;
+  document.getElementById("3p").textContent = (p18+p19+p20+p21)/10;
 
-  // document.getElementById("7p2").textContent = (p26+p27+p28+p29+p1+p2+p3+p4+p5)/25;
-  // document.getElementById("6p2").textContent = (p6+p7+p8+p9)/25;
-  // document.getElementById("5p2").textContent = (p10+p11+p12+p13)/25;
-  // document.getElementById("4p2").textContent = (p14+p15+p16+p17)/25;
-  // document.getElementById("3p2").textContent = (p18+p19+p20+p21)/25;
-  // document.getElementById("2p2").textContent = (p22+p23+p24+p25)/25;
+  document.getElementById("7p2").textContent = (p26+p27+p28+p29+p1+p2+p3+p4+p5)/25;
+  document.getElementById("6p2").textContent = (p6+p7+p8+p9)/25;
+  document.getElementById("5p2").textContent = (p10+p11+p12+p13)/25;
+  document.getElementById("4p2").textContent = (p14+p15+p16+p17)/25;
+  document.getElementById("3p2").textContent = (p18+p19+p20+p21)/25;
+  document.getElementById("2p2").textContent = (p22+p23+p24+p25)/25;
 }
 calc();
 const myint = setInterval(calc,5000);
@@ -497,25 +497,25 @@ billpagescreenshot.addEventListener('click', () => {
 
 // let avg = 0;
 
-//   document.getElementById("s1b1").onclick = function(){
-//   avg = Number(document.getElementById("input1").value);
-//   document.getElementById("7f").textContent = Math.round((avg * .2)/70);
-//   document.getElementById("6f").textContent = Math.round((avg * .2)/60);
-//   document.getElementById("5f").textContent = Math.round((avg* .2)/50);
-//   document.getElementById("4f").textContent = Math.round((avg * .2)/40);
-//   document.getElementById("3f").textContent = Math.round((avg * .2)/30);
+  document.getElementById("s1b1").onclick = function(){
+  avg = Number(document.getElementById("input1").value);
+  document.getElementById("7f").textContent = Math.round((avg * .2)/70);
+  document.getElementById("6f").textContent = Math.round((avg * .2)/60);
+  document.getElementById("5f").textContent = Math.round((avg* .2)/50);
+  document.getElementById("4f").textContent = Math.round((avg * .2)/40);
+  document.getElementById("3f").textContent = Math.round((avg * .2)/30);
   
-//   }
+  }
 
-//   document.getElementById("s1b2").onclick = function(){
-//     avg = Number(document.getElementById("input2").value);
-//     document.getElementById("7f2").textContent = Math.round((avg * .15)/175);
-//     document.getElementById("6f2").textContent = Math.round((avg * .15)/150);
-//     document.getElementById("5f2").textContent = Math.round((avg* .15)/125);
-//     document.getElementById("4f2").textContent = Math.round((avg * .2)/100);
-//     document.getElementById("3f2").textContent = Math.round((avg * .2)/75);
-//     document.getElementById("2f2").textContent = Math.round((avg * .15)/50);
-//     }
+  document.getElementById("s1b2").onclick = function(){
+    avg = Number(document.getElementById("input2").value);
+    document.getElementById("7f2").textContent = Math.round((avg * .15)/175);
+    document.getElementById("6f2").textContent = Math.round((avg * .15)/150);
+    document.getElementById("5f2").textContent = Math.round((avg* .15)/125);
+    document.getElementById("4f2").textContent = Math.round((avg * .2)/100);
+    document.getElementById("3f2").textContent = Math.round((avg * .2)/75);
+    document.getElementById("2f2").textContent = Math.round((avg * .15)/50);
+    }
 
     let x = "bm1",y = "bpi1",z = "bi1",w = "bp1",t="bq1";
     let i = 1;
@@ -530,6 +530,7 @@ billpagescreenshot.addEventListener('click', () => {
                   <td><input id="${z}" type="number"></td>
                   <td id="${w}"></td>`;
 
+
       document.getElementById(t).textContent = document.getElementById("q").value;           
       document.getElementById(x).textContent = document.getElementById("mod").value;
       document.getElementById(y).textContent = showtotal;
@@ -538,23 +539,31 @@ billpagescreenshot.addEventListener('click', () => {
       y = "bpi" + i;
       z = "bi" + i;
       w = "bp" + i;
+      t = "bq" + i;
 
       
                   p1 = p2 = p3 = p4 = p5= p6 = p7= p8= p9= p10= p11= p12 =p13 =p14 =p15 = p16 = p17 =p18 = p19 =p20 =p21 =p22 =p23 =p24 =p25 =p26 = p27 =p28 =p29 = 0;
                   t1 = t2 = t3 = t4 = t5= t6 = t7= t8= t9= t10= t11= t12 =t13 =t14 =t15 = t16 = t17 =t18 = t19 =t20 =t21 =t22 =t23 =t24 =t25 =t26 = t27 =t28 =t29 = 0;
                   i1 = i2 = i3 = i4 = i5= i6 = i7= i8= i9= i10= i11= i12 =i13 =i14 =i15 = i16 = i17 =i18 = i19 =i20 =i21 =i22 =i23 =i24 =i25 =i26 = i27 =i28 =i29 = 0;
               
-                  calc();    
-    }       
+                  calc(); 
+    let a = "c1",b =2;
+    for(let i = 1; i < 30; i++){
+      document.getElementById(a).textContent = "";
+      a = "c" + b;
+      b++;
+    }   
+    };       
     
 
     document.getElementById("billpagesubmit").onclick = function(){
       let y = "bpi1",z = "bi1",w = "bp1";
       let j = 1;
       let total = 0;
+ 
       for(let k = 1; k < i; k++){
-        let sum =Number(document.getElementById(y).textContent) +
-                 Number(document.getElementById(z).textContent);
+        let sum =(Number(document.getElementById(y).textContent)) *
+                 (Number(document.getElementById(z).value));
             document.getElementById(w).textContent = sum;     
             total += sum;
             j++;
@@ -562,8 +571,9 @@ billpagescreenshot.addEventListener('click', () => {
             z = "bi" + j;
             w = "bp" + j;
       }
+
       document.getElementById("billtotal").textContent = `Total-Amount : ₹${total}`;
-    }
+    };
 
 //     document.getElementById("passwordbtn").onclick = function(){
 //       let password = document.getElementById("password").value;
@@ -748,4 +758,30 @@ document.getElementById("billpageleft").onclick = function(){
   document.getElementById("inputpage").style.zIndex = 1;
   document.getElementById("billpage").style.left = "-360px";
   document.getElementById("billtotal").textContent = "";
+};
+
+let piece10 = "flase";
+document.getElementById("10p").onclick = function(){
+  
+  if(piece10 === "flase"){
+  document.getElementById("divfor10p").style.zIndex = 1;
+  piece10 = "true";
+  }
+  else{
+    document.getElementById("divfor10p").style.zIndex = -1;
+    piece10 = "flase";
+  }
+};
+
+let piece25 = "flase";
+document.getElementById("25p").onclick = function(){
+  
+  if(piece25 === "flase"){
+  document.getElementById("divfor25p").style.zIndex = 2;
+  piece25 = "true";
+  }
+  else{
+    document.getElementById("divfor25p").style.zIndex = -2;
+    piece25 = "flase";
+  }
 };

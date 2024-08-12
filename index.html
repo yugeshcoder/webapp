@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="inputpage.css">
   <link rel="stylesheet" href="outputpage.css">
   <link rel="stylesheet" href="billpage.css">
+  <link rel="stylesheet" href="checkpage.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Document</title>
 </head>
@@ -233,6 +234,72 @@
   </section>
 
   <section id="inputpage">
+    <div id="divfor10p">
+      <div id="avgfor10info">
+        <label><b style="font-size: 1.25em;">FOR 10 P: </b></label>
+        <input id="input1" type="number">
+        <button id="s1b1"> enter </button>
+      </div>
+      <table id="avgfor10table">
+        <tr>
+          <th>7 feet</th>
+          <th>6 feet</th>
+          <th>5 feet</th>
+          <th>4 feet</th>
+          <th>3 feet</th>
+        </tr>
+        <tr>
+          <td id="7f"></td>
+          <td id="6f"></td>
+          <td id="5f"></td>
+          <td id="4f"></td>
+          <td id="3f"></td>
+        </tr>
+        <tr>
+          <td id="7p"></td>
+          <td id="6p"></td>
+          <td id="5p"></td>
+          <td id="4p"></td>
+          <td id="3p"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="divfor25p">
+      <div id="avgfor25info">
+        <label><b style="font-size: 1.25em;">FOR 25 P: </b></label>
+        <input id="input2" type="number">
+        <button id="s1b2"> enter </button>
+      </div>
+      <div id="avgfor25div">
+        <table id="avgfor25table">
+          <tr>
+            <th>7 feet</th>
+            <th>6 feet</th>
+            <th>5 feet</th>
+            <th>4 feet</th>
+            <th>3 feet</th>
+            <th>2 feet</th>
+          </tr>
+          <tr>
+            <td id="7f2"></td>
+            <td id="6f2"></td>
+            <td id="5f2"></td>
+            <td id="4f2"></td>
+            <td id="3f2"></td>
+            <td id="2f2"></td>
+          </tr>
+          <tr>
+            <td id="7p2"></td>
+            <td id="6p2"></td>
+            <td id="5p2"></td>
+            <td id="4p2"></td>
+            <td id="3p2"></td>
+            <td id="2p2"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="inputdqmn">
     <div class="DQ">
       <label id="labeldate" for="date">Date:<input id="date" type="date"></label>
       <div class="divforq">
@@ -278,7 +345,12 @@
           </datalist>
         </div>
     </div>
-    <div id="showtotaldiv"><h1 id="showtotal">WELCOME</h1></div>
+  </div>
+    <div id="showtotaldiv">
+      <button id="10p">10p</button>
+      <h1 id="showtotal">WELCOME</h1>
+      <button id="25p">25p</button>
+    </div>
     <div id="tableheader">
       <table>
         <tr>
@@ -527,12 +599,7 @@
           </table>
         </div>
         <div id="billtotaldiv">
-          <h1 id="billtotal">Guide :<br> In home page + buttton use to add to bill.<br><br>
-                                          Other two buttons nav to each pages such as Feet page and Bill page.<br><br>
-                                          Screenshot button help to take picture of your feet and bill details.<br><br>
-                                          Resize button to remove unused rows from the feet table.<br><br>
-                                          Submit button to complete your billing calculation.
-                                          </button></h1>
+          <h1 id="billtotal"></h1>
         </div>
       </div>
       <div class="navbtndiv billnavdiv">
