@@ -1,4 +1,7 @@
 #billpage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 300px;
   background-color: lightblue;
   position: absolute;
