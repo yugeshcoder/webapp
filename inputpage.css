@@ -79,7 +79,7 @@ input[type="number"]{
   background-color: hsla(231, 95%, 50%, 0.5);
 }
 
-.navbtndiv #inputpagedone{
+.navbtndiv #inputpageplus{
   padding: 5px;
   background-color: rgb(252, 164, 0);
   color: black;

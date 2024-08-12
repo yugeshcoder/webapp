@@ -33,11 +33,10 @@
 #billtable input{
   background-color: lightblue;
   text-align: center;
+  font-weight: 25;
+  font-size: medium;
 }
 
-.billnavdiv{
-
-}
 
 #billpagescreenshot{
   padding: 5px;
