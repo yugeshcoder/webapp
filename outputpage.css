@@ -35,3 +35,13 @@
 .oshowtotal{
   display: block;
 }
+
+.outputnav{
+  margin-bottom: 30px;
+}
+
+#outputpagescreenshot{
+  padding: 5px;
+  background-color: rgba(37, 218, 13, 0.562);
+  height: 40px;
+}

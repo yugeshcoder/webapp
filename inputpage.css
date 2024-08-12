@@ -76,24 +76,15 @@ input[type="number"]{
   border-radius: 20px;
   border: none;
   color: white;
-  background-color: hsla(0, 0%, 50%, 0.534);
+  background-color: hsla(231, 95%, 50%, 0.5);
 }
 
 .navbtndiv #inputpagedone{
   padding: 5px;
-  background-color: lawngreen;
+  background-color: rgb(252, 164, 0);
   color: black;
-  height: 40px;
-}
-
-#inputpageleft:active{
-  background-color: hsla(0, 0%, 50%, 0.80)
-}
-
-#inputpageright:active{
-  background-color: hsla(0, 0%, 50%, 0.80)
-}
-
-#navbtndiv #inputpagedone:active{
-  background-color: tomato
+  height: 43px;
+  width: 50px;
+  border-radius: 100px;
+  border: 1px solid ;
 }

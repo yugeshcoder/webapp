@@ -7,22 +7,29 @@
   <link rel="stylesheet" href="inputpage.css">
   <link rel="stylesheet" href="outputpage.css">
   <link rel="stylesheet" href="billpage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Document</title>
 </head>
 <body>
   <section id="outputpage">
+
     <div id="screenshotinfo">
+
       <div class="DQ">
+
         <div>
           <label id="outputlabeldate" for="date">Date:<input id="date" type="date"></label>
         </div>
+
         <div class="divforq">
           <label id="outputlabelq" for="q">Q: <select id="q">
             <option >&#8545;</option>
             <option>&#x2160;</option>
           </select></label>
         </div>
+
       </div>
+
       <div class="MN">
         <div class="modeldiv">
           <label id="outputlabel1">Model:
@@ -58,6 +65,7 @@
             </datalist>
           </div>
       </div>
+
       <div id="outputtablediv">
         <table id="outputtable">
           <tr>
@@ -213,13 +221,17 @@
         </table>
         <div class="oshowtotal"><h1 id="oshowtotal"></h1></div>
       </div>
+
     </div>
-    <div class="navbtndiv">
-      <button id="outputpage">Left</button>
-      <button id="outputpage">Done</button>
-      <button id="outputpageright">Right</button>
+
+    <div class="navbtndiv outputnav">
+      <button id="outputpageresize">Resize</button>
+      <button id="outputpagescreenshot">Screen Shot</button>
+      <button id="outputpageright">&rarr;</button>
     </div>
-    </section>
+
+  </section>
+
   <section id="inputpage">
     <div class="DQ">
       <label id="labeldate" for="date">Date:<input id="date" type="date"></label>
@@ -485,11 +497,13 @@
       </table>
     </div>
     <div class="navbtndiv">
-      <button id="inputpageleft">Left</button>
-      <button id="inputpagedone">Done</button>
-      <button id="inputpageright">Right</button>
+      <button id="inputpageleft">&larr;</button>
+      <button id="inputpagedone" style="font-size: 2rem;">
+        <i style="font-size:24px" class="fa">&#xf067;</i></button>
+      <button id="inputpageright">&rarr;</button>
     </div>
     </section>
+
     <section id="billpage">
       <div id="billscreenshot">
         <div id="billdatediv">
@@ -512,15 +526,21 @@
           </table>
         </div>
         <div id="billtotaldiv">
-          <h1 id="billtotal">BYE</h1>
+          <h1 id="billtotal">Guide :<br> In home page + buttton use to add to bill.<br><br>
+                                          Other two buttons nav to each pages such as Feet page and Bill page.<br><br>
+                                          Screenshot button help to take picture of your feet and bill details.<br><br>
+                                          Resize button to remove unused rows from the feet table.<br><br>
+                                          Submit button to complete your billing calculation.
+                                          </button></h1>
         </div>
       </div>
-      <div class="navbtndiv">
-        <button id="billpageleft">Left</button>
-        <button id="billpagedone">Done</button>
-        <button id="billpageright">Right</button>
+      <div class="navbtndiv billnavdiv">
+        <button id="billpageleft">&larr;</button>
+        <button id="billpagescreenshot">Screenshot</button>
+        <button id="billpagesubmit">Submit</button>
       </div>
   </section>
+
   <script src="index.js"></script>
 </body>
 </html>
