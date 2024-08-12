@@ -1,17 +1,15 @@
-html{
-  width: 412px;
-  height: 914px;
-  overflow: hidden;
-}
-body{
-  margin: 0;
-  padding: 0;
+html, body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
+
+body {
+  overscroll-behavior: none; 
+  overflow: hidden;
+} 
 section{
   display: flex;
+  overflow: hidden;
 }
 
 #div1{
@@ -25,7 +23,6 @@ section{
   background-color: lightpink;
   min-width: 412px;
   min-height: 914px;
-  left: -412px;
 }
 #div3{
   position: relative;
