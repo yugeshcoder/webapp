@@ -21,6 +21,7 @@
   justify-content: center; 
   text-align: center;
   margin-left: 9px;
+  margin-bottom: 50px;
 }
 #outputtable{
   width: 280px;
@@ -44,4 +45,15 @@
   padding: 5px;
   background-color: rgba(37, 218, 13, 0.562);
   height: 40px;
+}
+
+.outputnav{
+  position: fixed;
+  bottom: -35px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  background-color: lightblue;
+  padding: 5px 0;
+  border-radius: 20px;
 }

@@ -40,6 +40,17 @@
 
 #billpagescreenshot{
   padding: 5px;
-  background-color: rgba(37, 218, 13, 0.562);
+  background-color: rgba(37, 218, 13, 0.8);
   height: 40px;
+}
+
+.billnavdiv{
+  position: fixed;
+  bottom: 0px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(173, 216, 230, 0.521);
+  padding: 5px 0;
+  border-radius: 20px;
 }
