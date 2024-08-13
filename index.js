@@ -46,9 +46,8 @@ let i1 = i2 = i3 = i4 = i5= i6 = i7= i8= i9= i10= i11= i12 =i13 =i14 =i15 = i16 
 
 var input27 = document.getElementById("n27");
 input27.addEventListener("keydown", function(event) {
+  event.preventDefault();
   if (event.key === "Enter") {
-    event.preventDefault();
-    event.stopPropagation();
     calc();
   }
 });
