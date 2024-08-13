@@ -239,8 +239,8 @@ input25.addEventListener("keypress", function(event) {
 });
 
 
-var input26 = document.getElementById("n26");
-input26.addEventListener("keydown", function(event) {
+var inputd26 = document.getElementById("n26");
+inputd26.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
     event.preventDefault();
     calc();
