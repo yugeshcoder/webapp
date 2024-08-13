@@ -33,14 +33,14 @@ let t1 = t2 = t3 = t4 = t5= t6 = t7= t8= t9= t10= t11= t12 =t13 =t14 =t15 = t16 
 let i1 = i2 = i3 = i4 = i5= i6 = i7= i8= i9= i10= i11= i12 =i13 =i14 =i15 = i16 = i17 =i18 = i19 =i20 =i21 =i22 =i23 =i24 =i25 =i26 = i27 =i28 =i29 = 0;
 
 
-var input26 = document.getElementById("n26");
-input26.addEventListener("keydowm", function(event) {
-  console.log(event.key)
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
+// var input26 = document.getElementById("n26");
+// input26.addEventListener("keydpress", function(event) {
+//   console.log(event.key)
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
 
 // var input27 = document.getElementById("n27");
 // input27.addEventListener("keypress", function(event) {
@@ -782,100 +782,168 @@ function calc(){
   document.getElementById("2p2").textContent = (p22+p23+p24+p25)/25;
 }
 
-
+setInterval(calc,5000);
 
 
 document.getElementById("outputpageresize").onclick = function(){
 
-  
-  if(t1 == 0){
-    document.getElementById("or1").remove();
-  }
-  if(t2 == 0){
-    document.getElementById("or2").remove();
-  }
-  if(t3 == 0){
-    document.getElementById("or3").remove();
-  }
-  if(t4 == 0){
-    document.getElementById("or4").remove();
-  }
-  if(t5 == 0){
-    document.getElementById("or5").remove();
-  }
-  if(t6 == 0){
-    document.getElementById("or6").remove();
-  }
-  if(t7 == 0){
-    document.getElementById("or7").remove();
-  }
-  if(t8 == 0){
-    document.getElementById("or8").remove();
-  }
-  if(t9 == 0){
-    document.getElementById("or9").remove();
-  }
-  if(t10 == 0){
-    document.getElementById("or10").remove();
-  }
-  if(t11 == 0){
-    document.getElementById("or11").remove();
-  }
-  if(t12 == 0){
-    document.getElementById("or12").remove();
-  }
-  if(t13 == 0){
-    document.getElementById("or13").remove();
-  }
-  if(t14 == 0){
-    document.getElementById("or14").remove();
-  }
-  if(t15 == 0){
-    document.getElementById("or15").remove();
-  }
-  if(t16 == 0){
-    document.getElementById("or16").remove();
-  }
-  if(t17 == 0){
-    document.getElementById("or17").remove();
-  }
-  if(t18 == 0){
-    document.getElementById("or18").remove();
-  }
-  if(t19 == 0){
-    document.getElementById("or19").remove();
-  }
-  if(t20 == 0){
-    document.getElementById("or20").remove();
-  }
-  if(t21 == 0){
-    document.getElementById("or21").remove();
-  }
-  if(t22 == 0){
-    document.getElementById("or22").remove();
-  }
-  if(t23 == 0){
-    document.getElementById("or23").remove();
-  }
-  if(t24 == 0){
-    document.getElementById("or24").remove();
-  }
-  if(t25 == 0){
-    document.getElementById("or25").remove();
-  }
 
-  if(t26 == 0){
-    document.getElementById("or26").remove();
-  }
-  if(t27 == 0){
-    document.getElementById("or27").remove();
-  }
-  if(t28 == 0){
-    document.getElementById("or28").remove();
-  }
-  if(t29 == 0){
-    document.getElementById("or29").remove();
-  }
+  p1 = p2 = p3 = p4 = p5= p6 = p7= p8= p9= p10= p11= p12 =p13 =p14 =p15 = p16 = p17 =p18 = p19 =p20 =p21 =p22 =p23 =p24 =p25 =p26 = p27 =p28 =p29 = 0;
+  t1 = t2 = t3 = t4 = t5= t6 = t7= t8= t9= t10= t11= t12 =t13 =t14 =t15 = t16 = t17 =t18 = t19 =t20 =t21 =t22 =t23 =t24 =t25 =t26 = t27 =t28 =t29 = 0;
+  i1 = i2 = i3 = i4 = i5= i6 = i7= i8= i9= i10= i11= i12 =i13 =i14 =i15 = i16 = i17 =i18 = i19 =i20 =i21 =i22 =i23 =i24 =i25 =i26 = i27 =i28 =i29 = 0;
+
+
+  document.getElementById("outputtable").innerHTML = `
+  <tr>
+    <th>FEET</th>
+    <th>PIECES</th>
+    <th>TOTAL</th>
+  </tr>
+  <tr id="or26">
+    <td id="of26">9.0</td>
+    <td id="op26"></td>
+    <td id="t26"></td>
+  </tr>
+  <tr id="or27">
+    <td id="of27">8.9</td>
+    <td id="op27"></td>
+    <td id="t27"></td>
+  </tr>
+  <tr id="or28">
+    <td id="of28">8.6</td>
+    <td id="op28"></td>
+    <td id="t28"></td>
+  </tr>
+  <tr id="or29">
+    <td id="of29">8.3</td>
+    <td id="op29"></td>
+    <td id="t29"></td>
+  </tr>  
+  <tr id="or1">
+    <td id="of1">8.0</td>
+    <td id="op1"></td>
+    <td id="t1"></td>
+  </tr>
+  <tr id="or2">
+    <td id="of2">7.9</td>
+    <td id="op2"></td>
+    <td id="t2"></td>
+  </tr>
+  <tr id="or3">
+    <td id="of3">7.6</td>
+    <td id="op3"></td>
+    <td id="t3"></td>
+  </tr>
+  <tr id="or4">
+    <td id="of4">7.3</td>
+    <td id="op4"></td>
+    <td id="t4"></td>
+  </tr>
+  <tr id="or5">
+    <td id="of5">7.0</td>
+    <td id="op5"></td>
+    <td id="t5"></td>
+  </tr>
+  <tr id="or6">
+    <td id="of6">6.9</td>
+    <td id="op6"></td>
+    <td id="t6"></td>
+  </tr>
+  <tr id="or7">
+    <td id="of7">6.6</td>
+    <td id="op7"></td>
+    <td id="t7"></td>
+  </tr>
+  <tr id="or8">
+    <td id="of8">6.3</td>
+    <td id="op8"></td>
+    <td id="t8"></td>
+  </tr>
+  <tr id="or9">
+    <td id="of9">6.0</td>
+    <td id="op9"></td>
+    <td id="t9"></td>
+  </tr>
+  <tr id="or10">
+    <td id="of10">5.9</td>
+    <td id="op10"></td>
+    <td id="t10"></td>
+  </tr>
+  <tr id="or11">
+    <td id="of11">5.6</td>
+    <td id="op11"></td>
+    <td id="t11"></td>
+  </tr>
+  <tr id="or12">
+    <td id="of12">5.3</td>
+    <td id="op12"></td>
+    <td id="t12"></td>
+  </tr>
+  <tr id="or13">
+    <td id="of13">5.0</td>
+    <td id="op13"></td>
+    <td id="t13"></td>
+  </tr>
+  <tr id="or14">
+    <td id="of14">4.9</td>
+    <td id="op14"></td>
+    <td id="t14"></td>
+  </tr>
+  <tr id="or15">
+    <td id="of15">4.6</td>
+    <td id="op15"></td>
+    <td id="t15"></td>
+  </tr>
+  <tr id="or16">
+    <td id="of16">4.3</td>
+    <td id="op16"></td>
+    <td id="t16"></td>
+  </tr>
+  <tr id="or17">
+    <td id="of17">4.0</td>
+    <td id="op17"></td>
+    <td id="t17"></td>
+  </tr> 
+  <tr id="or18">
+    <td id="of18">3.9</td>
+    <td id="op18"></td>
+    <td id="t18"></td>
+  </tr>
+  <tr id="or19">
+    <td id="of19">3.6</td>
+    <td id="op19"></td>
+    <td id="t19"></td>
+  </tr>
+  <tr id="or20">
+    <td id="of20">3.3</td>
+    <td id="op20"></td>
+    <td id="t20"></td>
+  </tr>
+  <tr id="or21">
+    <td id="of21">3.0</td>
+    <td id="op21"></td>
+    <td id="t21"></td>
+  </tr>
+  <tr id="or22">
+    <td id="of22">2.9</td>
+    <td id="op22"></td>
+    <td id="t22"></td>
+  </tr>
+  <tr id="or23">
+    <td id="of23">2.6</td>
+    <td id="op23"></td>
+    <td id="t23"></td>
+  </tr>
+  <tr id="or24">
+    <td id="of24">2.3</td>
+    <td id="op24"></td>
+    <td id="t24"></td>
+  </tr>
+  <tr id="or25">
+    <td id="of25">2.0</td>
+    <td id="op25"></td>
+    <td id="t25"></td>
+  </tr>`;
 }
 
 
@@ -932,8 +1000,8 @@ billpagescreenshot.addEventListener('click', () => {
     let i = 1;
     document.getElementById("inputpageplus").onclick = function (){
 
-      var Enterle = document.getElementById("billEnterle");
-      var row = Enterle.insertRow(1);
+      var table = document.getElementById("billtable");
+      var row = table.insertRow(1);
       row.innerHTML = `
                   <td id="${t}"></td>
                   <td id="${x}"></td>
@@ -953,169 +1021,103 @@ billpagescreenshot.addEventListener('click', () => {
       t = "bq" + i;
 
       
-                  p1 = p2 = p3 = p4 = p5= p6 = p7= p8= p9= p10= p11= p12 =p13 =p14 =p15 = p16 = p17 =p18 = p19 =p20 =p21 =p22 =p23 =p24 =p25 =p26 = p27 =p28 =p29 = 0;
-                  t1 = t2 = t3 = t4 = t5= t6 = t7= t8= t9= t10= t11= t12 =t13 =t14 =t15 = t16 = t17 =t18 = t19 =t20 =t21 =t22 =t23 =t24 =t25 =t26 = t27 =t28 =t29 = 0;
-                  i1 = i2 = i3 = i4 = i5= i6 = i7= i8= i9= i10= i11= i12 =i13 =i14 =i15 = i16 = i17 =i18 = i19 =i20 =i21 =i22 =i23 =i24 =i25 =i26 = i27 =i28 =i29 = 0;
-              
-                  calc(); 
+  
     let a = "c1",b =2;
     for(let i = 1; i < 30; i++){
       document.getElementById(a).textContent = "";
       a = "c" + b;
       b++;
     }
-    
-    document.getElementById("outputEnterle").innerHTML = `
-    <tr>
-      <th>FEET</th>
-      <th>PIECES</th>
-      <th>TOTAL</th>
-    </tr>
-    <tr id="or26">
-      <td id="of26">9.0</td>
-      <td id="op26"></td>
-      <td id="t26"></td>
-    </tr>
-    <tr id="or27">
-      <td id="of27">8.9</td>
-      <td id="op27"></td>
-      <td id="t27"></td>
-    </tr>
-    <tr id="or28">
-      <td id="of28">8.6</td>
-      <td id="op28"></td>
-      <td id="t28"></td>
-    </tr>
-    <tr id="or29">
-      <td id="of29">8.3</td>
-      <td id="op29"></td>
-      <td id="t29"></td>
-    </tr>  
-    <tr id="or1">
-      <td id="of1">8.0</td>
-      <td id="op1"></td>
-      <td id="t1"></td>
-    </tr>
-    <tr id="or2">
-      <td id="of2">7.9</td>
-      <td id="op2"></td>
-      <td id="t2"></td>
-    </tr>
-    <tr id="or3">
-      <td id="of3">7.6</td>
-      <td id="op3"></td>
-      <td id="t3"></td>
-    </tr>
-    <tr id="or4">
-      <td id="of4">7.3</td>
-      <td id="op4"></td>
-      <td id="t4"></td>
-    </tr>
-    <tr id="or5">
-      <td id="of5">7.0</td>
-      <td id="op5"></td>
-      <td id="t5"></td>
-    </tr>
-    <tr id="or6">
-      <td id="of6">6.9</td>
-      <td id="op6"></td>
-      <td id="t6"></td>
-    </tr>
-    <tr id="or7">
-      <td id="of7">6.6</td>
-      <td id="op7"></td>
-      <td id="t7"></td>
-    </tr>
-    <tr id="or8">
-      <td id="of8">6.3</td>
-      <td id="op8"></td>
-      <td id="t8"></td>
-    </tr>
-    <tr id="or9">
-      <td id="of9">6.0</td>
-      <td id="op9"></td>
-      <td id="t9"></td>
-    </tr>
-    <tr id="or10">
-      <td id="of10">5.9</td>
-      <td id="op10"></td>
-      <td id="t10"></td>
-    </tr>
-    <tr id="or11">
-      <td id="of11">5.6</td>
-      <td id="op11"></td>
-      <td id="t11"></td>
-    </tr>
-    <tr id="or12">
-      <td id="of12">5.3</td>
-      <td id="op12"></td>
-      <td id="t12"></td>
-    </tr>
-    <tr id="or13">
-      <td id="of13">5.0</td>
-      <td id="op13"></td>
-      <td id="t13"></td>
-    </tr>
-    <tr id="or14">
-      <td id="of14">4.9</td>
-      <td id="op14"></td>
-      <td id="t14"></td>
-    </tr>
-    <tr id="or15">
-      <td id="of15">4.6</td>
-      <td id="op15"></td>
-      <td id="t15"></td>
-    </tr>
-    <tr id="or16">
-      <td id="of16">4.3</td>
-      <td id="op16"></td>
-      <td id="t16"></td>
-    </tr>
-    <tr id="or17">
-      <td id="of17">4.0</td>
-      <td id="op17"></td>
-      <td id="t17"></td>
-    </tr> 
-    <tr id="or18">
-      <td id="of18">3.9</td>
-      <td id="op18"></td>
-      <td id="t18"></td>
-    </tr>
-    <tr id="or19">
-      <td id="of19">3.6</td>
-      <td id="op19"></td>
-      <td id="t19"></td>
-    </tr>
-    <tr id="or20">
-      <td id="of20">3.3</td>
-      <td id="op20"></td>
-      <td id="t20"></td>
-    </tr>
-    <tr id="or21">
-      <td id="of21">3.0</td>
-      <td id="op21"></td>
-      <td id="t21"></td>
-    </tr>
-    <tr id="or22">
-      <td id="of22">2.9</td>
-      <td id="op22"></td>
-      <td id="t22"></td>
-    </tr>
-    <tr id="or23">
-      <td id="of23">2.6</td>
-      <td id="op23"></td>
-      <td id="t23"></td>
-    </tr>
-    <tr id="or24">
-      <td id="of24">2.3</td>
-      <td id="op24"></td>
-      <td id="t24"></td>
-    </tr>
-    <tr id="or25">
-      <td id="of25">2.0</td>
-      <td id="op25"></td>
-      <td id="t25"></td>
-    </tr>`;
+
+    if(t1 == 0){
+      document.getElementById("or1").remove();
+    }
+    if(t2 == 0){
+      document.getElementById("or2").remove();
+    }
+    if(t3 == 0){
+      document.getElementById("or3").remove();
+    }
+    if(t4 == 0){
+      document.getElementById("or4").remove();
+    }
+    if(t5 == 0){
+      document.getElementById("or5").remove();
+    }
+    if(t6 == 0){
+      document.getElementById("or6").remove();
+    }
+    if(t7 == 0){
+      document.getElementById("or7").remove();
+    }
+    if(t8 == 0){
+      document.getElementById("or8").remove();
+    }
+    if(t9 == 0){
+      document.getElementById("or9").remove();
+    }
+    if(t10 == 0){
+      document.getElementById("or10").remove();
+    }
+    if(t11 == 0){
+      document.getElementById("or11").remove();
+    }
+    if(t12 == 0){
+      document.getElementById("or12").remove();
+    }
+    if(t13 == 0){
+      document.getElementById("or13").remove();
+    }
+    if(t14 == 0){
+      document.getElementById("or14").remove();
+    }
+    if(t15 == 0){
+      document.getElementById("or15").remove();
+    }
+    if(t16 == 0){
+      document.getElementById("or16").remove();
+    }
+    if(t17 == 0){
+      document.getElementById("or17").remove();
+    }
+    if(t18 == 0){
+      document.getElementById("or18").remove();
+    }
+    if(t19 == 0){
+      document.getElementById("or19").remove();
+    }
+    if(t20 == 0){
+      document.getElementById("or20").remove();
+    }
+    if(t21 == 0){
+      document.getElementById("or21").remove();
+    }
+    if(t22 == 0){
+      document.getElementById("or22").remove();
+    }
+    if(t23 == 0){
+      document.getElementById("or23").remove();
+    }
+    if(t24 == 0){
+      document.getElementById("or24").remove();
+    }
+    if(t25 == 0){
+      document.getElementById("or25").remove();
+    }
+  
+    if(t26 == 0){
+      document.getElementById("or26").remove();
+    }
+    if(t27 == 0){
+      document.getElementById("or27").remove();
+    }
+    if(t28 == 0){
+      document.getElementById("or28").remove();
+    }
+    if(t29 == 0){
+      document.getElementById("or29").remove();
+    }
+  
     };       
     
 
