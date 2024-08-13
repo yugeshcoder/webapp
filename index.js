@@ -34,209 +34,210 @@ let i1 = i2 = i3 = i4 = i5= i6 = i7= i8= i9= i10= i11= i12 =i13 =i14 =i15 = i16 
 
 
 var input26 = document.getElementById("n26");
-input26.addEventListener("keypress", function(event) {
-  if (event.key === "Enter" || event.key === ".") {
+input26.addEventListener("keydowm", function(event) {
+  console.log(event.key)
+  if (event.key === "Enter") {
     event.preventDefault();
     calc();
   }
 });
 
-var input27 = document.getElementById("n27");
-input27.addEventListener("keypress", function(event) {
-  if (event.key === "Enter" || event.key === ".") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input28 = document.getElementById("n28");
-input28.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input29 = document.getElementById("n29");
-input29.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input1 = document.getElementById("n1");
-input1.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input2 = document.getElementById("n2");
-input2.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input3 = document.getElementById("n3");
-input3.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input4 = document.getElementById("n4");
-input4.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input5 = document.getElementById("n5");
-input5.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input6 = document.getElementById("n6");
-input6.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input7 = document.getElementById("n7");
-input7.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input8 = document.getElementById("n8");
-input8.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input9 = document.getElementById("n9");
-input9.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input10 = document.getElementById("n10");
-input10.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input11 = document.getElementById("n11");
-input11.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input12 = document.getElementById("n12");
-input12.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input13 = document.getElementById("n13");
-input13.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input14 = document.getElementById("n14");
-input14.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input15 = document.getElementById("n15");
-input15.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input16 = document.getElementById("n16");
-input16.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input17 = document.getElementById("n17");
-input17.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input18 = document.getElementById("n18");
-input18.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input19 = document.getElementById("n19");
-input19.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input20 = document.getElementById("n20");
-input20.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input21 = document.getElementById("n21");
-input21.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input22 = document.getElementById("n22");
-input22.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input23 = document.getElementById("n23");
-input23.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input24 = document.getElementById("n24");
-input24.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
-var input25 = document.getElementById("n25");
-input25.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    calc();
-  }
-});
+// var input27 = document.getElementById("n27");
+// input27.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter" || event.key === ".") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input28 = document.getElementById("n28");
+// input28.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input29 = document.getElementById("n29");
+// input29.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input1 = document.getElementById("n1");
+// input1.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input2 = document.getElementById("n2");
+// input2.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input3 = document.getElementById("n3");
+// input3.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input4 = document.getElementById("n4");
+// input4.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input5 = document.getElementById("n5");
+// input5.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input6 = document.getElementById("n6");
+// input6.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input7 = document.getElementById("n7");
+// input7.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input8 = document.getElementById("n8");
+// input8.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input9 = document.getElementById("n9");
+// input9.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input10 = document.getElementById("n10");
+// input10.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input11 = document.getElementById("n11");
+// input11.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input12 = document.getElementById("n12");
+// input12.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input13 = document.getElementById("n13");
+// input13.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input14 = document.getElementById("n14");
+// input14.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input15 = document.getElementById("n15");
+// input15.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input16 = document.getElementById("n16");
+// input16.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input17 = document.getElementById("n17");
+// input17.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input18 = document.getElementById("n18");
+// input18.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input19 = document.getElementById("n19");
+// input19.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input20 = document.getElementById("n20");
+// input20.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input21 = document.getElementById("n21");
+// input21.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input22 = document.getElementById("n22");
+// input22.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input23 = document.getElementById("n23");
+// input23.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input24 = document.getElementById("n24");
+// input24.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
+// var input25 = document.getElementById("n25");
+// input25.addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     calc();
+//   }
+// });
 
 
 // var input26 = document.getElementById("n26");
