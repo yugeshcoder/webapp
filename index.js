@@ -16,8 +16,7 @@ function check(){
   document.getElementById("billname").innerHTML = ` Name : <b style="font-size:1.5rem;">${name} </b>`;
 }
 
-check();
-setInterval(check,2000);
+
 
 
 
@@ -33,14 +32,14 @@ let t1 = t2 = t3 = t4 = t5= t6 = t7= t8= t9= t10= t11= t12 =t13 =t14 =t15 = t16 
 let i1 = i2 = i3 = i4 = i5= i6 = i7= i8= i9= i10= i11= i12 =i13 =i14 =i15 = i16 = i17 =i18 = i19 =i20 =i21 =i22 =i23 =i24 =i25 =i26 = i27 =i28 =i29 = 0;
 
 
-// var input26 = document.getElementById("n26");
-// input26.addEventListener("keydpress", function(event) {
-//   console.log(event.key)
-//   if (event.key === "Enter") {
-//     event.preventDefault();
-//     calc();
-//   }
-// });
+var input26 = document.getElementById("n26");
+input26.addEventListener("keydown", function(event) {
+  console.log(event.key)
+  if (event.key === "Enter") {
+    event.preventDefault();
+    calc();
+  }
+});
 
 // var input27 = document.getElementById("n27");
 // input27.addEventListener("keypress", function(event) {
