@@ -104,3 +104,8 @@ input[type="number"]{
 #inputdqmn{
   background-color: hwb(24 14% 45% / 1);
 }
+
+#td26{
+  display: flex;
+  
+}

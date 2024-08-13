@@ -16,7 +16,8 @@ function check(){
   document.getElementById("billname").innerHTML = ` Name : <b style="font-size:1.5rem;">${name} </b>`;
 }
 
-
+check();
+setInterval(check,2000);
 
 
 
@@ -32,22 +33,24 @@ let t1 = t2 = t3 = t4 = t5= t6 = t7= t8= t9= t10= t11= t12 =t13 =t14 =t15 = t16 
 let i1 = i2 = i3 = i4 = i5= i6 = i7= i8= i9= i10= i11= i12 =i13 =i14 =i15 = i16 = i17 =i18 = i19 =i20 =i21 =i22 =i23 =i24 =i25 =i26 = i27 =i28 =i29 = 0;
 
 
-var input26 = document.getElementById("n26");
-input26.addEventListener("keydown", function(event) {
-  console.log(event.key)
+// let ccc = setInterval(calc,100000000);
+// var input26 = document.getElementById("n26");
+// input26.addEventListener("keypress", function(event) {
+//   console.log(event.key);
+//   // if(event.key == 1 || event.key == 2 || event.key == 3 || event.key == 4 || event.key == 5
+//   //   || event.key == 6 || event.key == 7 || event.key == 8 || event.key == 9
+//   //  ){
+  
+//   //  }
+// });
+
+var input27 = document.getElementById("n27");
+input27.addEventListener("keydown", function(event) {
+  event.preventDefault();
   if (event.key === "Enter") {
-    event.preventDefault();
     calc();
   }
 });
-
-// var input27 = document.getElementById("n27");
-// input27.addEventListener("keypress", function(event) {
-//   if (event.key === "Enter" || event.key === ".") {
-//     event.preventDefault();
-//     calc();
-//   }
-// });
 // var input28 = document.getElementById("n28");
 // input28.addEventListener("keypress", function(event) {
 //   if (event.key === "Enter") {
@@ -779,9 +782,8 @@ function calc(){
   document.getElementById("4p2").textContent = (p14+p15+p16+p17)/25;
   document.getElementById("3p2").textContent = (p18+p19+p20+p21)/25;
   document.getElementById("2p2").textContent = (p22+p23+p24+p25)/25;
-}
 
-setInterval(calc,5000);
+}
 
 
 document.getElementById("outputpageresize").onclick = function(){
