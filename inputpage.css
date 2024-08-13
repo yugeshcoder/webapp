@@ -105,7 +105,16 @@ input[type="number"]{
   background-color: hwb(24 14% 45% / 1);
 }
 
-#td26{
+#enterbtndiv{
+  position: absolute;
+  top:177px;
+  right: 0px;
+}
+
+#enterbtn{
+  height: 420px;
   display: flex;
-  
+  align-items: center;
+  background-color:hwb(24 14% 45% / 0.6);
+  color: black;
 }
